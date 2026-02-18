@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+    int m,n,k;
+    printf("enter start stop and skip of the series:");
+    scanf("%d%d%d",&m,&n,&k);
+    for(int i=m;i<=n;i+=k){
+        printf("%d\n",i);
+    }
+}

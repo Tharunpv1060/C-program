@@ -1,0 +1,15 @@
+#include <stdio.h>
+struct category {
+    char cname[20];
+};
+struct product {
+    int pid;
+    char pname[20];
+    struct category c;
+};
+int main() {
+    struct product p;
+    scanf("%d %s %s",&p.pid,p.pname,p.c.cname);
+    printf("Product: %s\nCategory: %s", p.pname, p.c.cname);
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a[]={1,3,20,4,1}, n=5;
+
+    for(int i=1;i<n-1;i++)
+        if(a[i]>a[i-1] && a[i]>a[i+1])
+            printf("Peak element: %d", a[i]);
+
+    return 0;
+}

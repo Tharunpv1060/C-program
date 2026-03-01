@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a[]={1,2,3}, b[]={2,4}, n=3, m=2, flag;
+
+    for(int i=0;i<n;i++){
+        flag=0;
+        for(int j=0;j<m;j++)
+            if(a[i]==b[j]) flag=1;
+        if(flag==0) printf("%d ",a[i]);
+    }
+    return 0;
+}
